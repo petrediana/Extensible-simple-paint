@@ -98,6 +98,7 @@ namespace SimplePaint.ObjectModel
         {
             _lines = new List<List<Point>>();
             _isDrawing = false;
+            _backGroundImage = new Bitmap(400, 400);
 
             FilePath = Path.Combine(
                         Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
@@ -121,6 +122,10 @@ namespace SimplePaint.ObjectModel
         }
 
         public void Save() => Save(FilePath);
+
+        public void AddEmptyLine() => _lines.Add(new List<Point>());
+        public void AddLocationToLine(Point location) => _lines.Last().Add(location);
+        public void RemoveLastLine() => _lines.RemoveAt(_lines.Count - 1);
         #endregion
 
         #region Factory call an event - OnPropertyChanged

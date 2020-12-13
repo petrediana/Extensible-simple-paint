@@ -1,0 +1,12 @@
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\bin\Debug\SimplePaint.FormApplication.exe
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\bin\Debug\SimplePaint.FormApplication.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\bin\Debug\SimplePaint.ObjectModel.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\bin\Debug\SimplePaint.ObjectModel.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.csprojAssemblyReference.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.Form1.resources
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.Properties.Resources.resources
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.csproj.GenerateResource.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.csproj.CoreCompileInputs.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.csproj.CopyComplete
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.exe
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.pdb
