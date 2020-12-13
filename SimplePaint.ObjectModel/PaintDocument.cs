@@ -35,6 +35,7 @@ namespace SimplePaint.ObjectModel
         public event EventHandler FilePathChanged;
         #endregion
 
+        #region Public Properties Definitions: Lines, IsDrawing, BackGroundImage, FilePath, IsDirty
         public List<List<Point>> Lines
         {
             get => _lines;
@@ -90,6 +91,7 @@ namespace SimplePaint.ObjectModel
                 }
             }
         }
+        #endregion
 
         #region Implementing some basic features
         public void New()
