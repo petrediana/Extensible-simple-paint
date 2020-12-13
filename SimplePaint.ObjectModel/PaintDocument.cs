@@ -108,7 +108,9 @@ namespace SimplePaint.ObjectModel
 
         public void Save(string filePath)
         {
+            FilePath = filePath;
             BackGroundImage.Save(filePath);
+            IsDirty = false;
         }
 
         public void Load(string filePath)
