@@ -109,8 +109,11 @@ namespace SimplePaint.ObjectModel
 
         public void Save(string filePath)
         {
+            Bitmap paintedImage = new Bitmap(BackGroundImage);
+            Draw(Graphics.FromImage(paintedImage));
+
             FilePath = filePath;
-            BackGroundImage.Save(filePath);
+            paintedImage.Save(filePath);
             IsDirty = false;
         }
 
@@ -120,9 +123,31 @@ namespace SimplePaint.ObjectModel
             FilePath = filePath;
             IsDirty = false;
         }
+        public void Draw(Graphics graphics)
+        {
+            Pen pen = new Pen(Color.ForestGreen, 4);
+
+            foreach (var currentLine in _lines)
+            {
+                for (int i = 0; i < currentLine.Count - 1; ++i)
+                {
+                    graphics.DrawLine(pen, currentLine[i], currentLine[i + 1]);
+                }
+            }
+        }
+
+        public void CopyToClipboard()
+        {
+            DataObject dataObject = new DataObject();
+            Bitmap paintedImage = new Bitmap(BackGroundImage);
+
+            Draw(Graphics.FromImage(paintedImage));
+
+            dataObject.SetData(typeof(Bitmap), paintedImage);
+            Clipboard.SetDataObject(dataObject);
+        }
 
         public void Save() => Save(FilePath);
-
         public void AddEmptyLine() => _lines.Add(new List<Point>());
         public void AddLocationToLine(Point location) => _lines.Last().Add(location);
         public void RemoveLastLine() => _lines.RemoveAt(_lines.Count - 1);

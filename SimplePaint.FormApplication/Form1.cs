@@ -26,22 +26,22 @@ namespace SimplePaint.FormApplication
             _panelGraphics = drawingCanvasPanel.CreateGraphics();
             _panelGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
+            Resize += Form1_Resize;
+
             InitializeCanvasProperties();
             KeyDown += Form1_KeyDown;
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            Invalidate();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && e.KeyCode == Keys.C)
             {
-                DataObject dataObject = new DataObject();
-                dataObject.SetData(typeof(string), _doc.Lines.Count + " linii");
-
-                Bitmap b = new Bitmap(_doc.BackGroundImage);
-                Draw(Graphics.FromImage(b));
-
-                dataObject.SetData(typeof(Bitmap), b);
-                Clipboard.SetDataObject(dataObject);
+                _doc.CopyToClipboard();
             }
         }
 
@@ -51,6 +51,7 @@ namespace SimplePaint.FormApplication
 
             #region DrawingCanvasPanel Events needed to draw lines on it
             drawingCanvasPanel.Paint += DrawingCanvasPanel_Paint;
+
             drawingCanvasPanel.MouseDown += DrawingCanvasPanel_MouseDown;
             drawingCanvasPanel.MouseUp += DrawingCanvasPanel_MouseUp;
             drawingCanvasPanel.MouseMove += DrawingCanvasPanel_MouseMove;
@@ -59,7 +60,7 @@ namespace SimplePaint.FormApplication
 
         private void DrawingCanvasPanel_Paint(object sender, PaintEventArgs e)
         {
-            Draw(e.Graphics);
+            _doc.Draw(e.Graphics);
         }
 
         private void DrawingCanvasPanel_MouseMove(object sender, MouseEventArgs e)
@@ -67,7 +68,7 @@ namespace SimplePaint.FormApplication
             if (_doc.IsDrawing)
             {
                 _doc.AddLocationToLine(e.Location);
-                Draw(_panelGraphics);
+                _doc.Draw(_panelGraphics);
                 Invalidate();
             }
         }
@@ -81,19 +82,6 @@ namespace SimplePaint.FormApplication
         {
             _doc.IsDrawing = true;
             _doc.AddEmptyLine();
-        }
-
-        private void Draw(Graphics graphics)
-        {
-            Pen pen = new Pen(Color.ForestGreen, 4);
-            
-            foreach (var currentLine in _doc.Lines)
-            {
-                for (int i = 0; i < currentLine.Count - 1; ++i)
-                {
-                    graphics.DrawLine(pen, currentLine[i], currentLine[i + 1]);
-                }
-            }
         }
     }
 }
