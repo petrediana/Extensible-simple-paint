@@ -26,15 +26,8 @@ namespace SimplePaint.FormApplication
             _panelGraphics = drawingCanvasPanel.CreateGraphics();
             _panelGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-            Resize += Form1_Resize;
-
             InitializeCanvasProperties();
             KeyDown += Form1_KeyDown;
-        }
-
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            Invalidate();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
