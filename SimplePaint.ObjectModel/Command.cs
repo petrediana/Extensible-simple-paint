@@ -11,7 +11,9 @@ namespace SimplePaint.ObjectModel
     {
         public Command(string name, Image image = null, bool isEnabled = true)
         {
-
+            _name = name;
+            _image = image;
+            _isEnabled = isEnabled;
         }
 
         public abstract void Execute();
