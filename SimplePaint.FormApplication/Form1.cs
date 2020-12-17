@@ -28,6 +28,13 @@ namespace SimplePaint.FormApplication
 
             InitializeCanvasProperties();
             KeyDown += Form1_KeyDown;
+
+            Resize += Form1_Resize;
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            _panelGraphics = drawingCanvasPanel.CreateGraphics();
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -40,7 +47,7 @@ namespace SimplePaint.FormApplication
 
         private void InitializeCanvasProperties()
         {
-            drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
+            //drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
 
             #region DrawingCanvasPanel Events needed to draw lines on it
             drawingCanvasPanel.Paint += DrawingCanvasPanel_Paint;
@@ -53,7 +60,7 @@ namespace SimplePaint.FormApplication
 
         private void DrawingCanvasPanel_Paint(object sender, PaintEventArgs e)
         {
-            _doc.Draw(e.Graphics);
+            _panelGraphics = e.Graphics;
         }
 
         private void DrawingCanvasPanel_MouseMove(object sender, MouseEventArgs e)
