@@ -47,20 +47,13 @@ namespace SimplePaint.FormApplication
 
         private void InitializeCanvasProperties()
         {
-            //drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
+            drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
 
             #region DrawingCanvasPanel Events needed to draw lines on it
-            drawingCanvasPanel.Paint += DrawingCanvasPanel_Paint;
-
             drawingCanvasPanel.MouseDown += DrawingCanvasPanel_MouseDown;
             drawingCanvasPanel.MouseUp += DrawingCanvasPanel_MouseUp;
             drawingCanvasPanel.MouseMove += DrawingCanvasPanel_MouseMove;
             #endregion
-        }
-
-        private void DrawingCanvasPanel_Paint(object sender, PaintEventArgs e)
-        {
-            _panelGraphics = e.Graphics;
         }
 
         private void DrawingCanvasPanel_MouseMove(object sender, MouseEventArgs e)
