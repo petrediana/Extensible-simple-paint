@@ -52,6 +52,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VisualControls\CommandsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualControls\CommandsControl.Designer.cs">
+      <DependentUpon>CommandsControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="VisualControls\EditorControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -70,6 +76,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VisualControls\CommandsControl.resx">
+      <DependentUpon>CommandsControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VisualControls\EditorControl.resx">
       <DependentUpon>EditorControl.cs</DependentUpon>
     </EmbeddedResource>
