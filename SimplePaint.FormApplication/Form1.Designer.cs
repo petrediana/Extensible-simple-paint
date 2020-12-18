@@ -34,7 +34,7 @@
             // 
             // editorControl1
             // 
-            this.editorControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.editorControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.editorControl1.Location = new System.Drawing.Point(0, 0);
             this.editorControl1.Name = "editorControl1";
             this.editorControl1.Size = new System.Drawing.Size(583, 360);
