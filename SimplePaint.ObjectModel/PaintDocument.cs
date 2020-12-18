@@ -111,7 +111,7 @@ namespace SimplePaint.ObjectModel
 
             FilePath = Path.Combine(
                         Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
-                        "untitledPicture.txt"
+                        "untitledPicture"
                                     );
             IsDirty = false;
         }
