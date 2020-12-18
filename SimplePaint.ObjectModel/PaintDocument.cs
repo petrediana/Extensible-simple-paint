@@ -79,6 +79,12 @@ namespace SimplePaint.ObjectModel
                 }
             }
         }
+
+        public string FileName
+        {
+            get => new FileInfo(_filePath).Name;
+        }
+
         public bool IsDirty
         {
             get => _isDirty;
