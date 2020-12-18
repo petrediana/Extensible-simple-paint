@@ -102,9 +102,12 @@ namespace SimplePaint.ObjectModel
         #region Implementing some basic features
         public void New()
         {
+            // TODO: load from resource
+            const string testpath = @"C:\Users\Peanut\Desktop\download.png";
+
             _lines = new List<List<Point>>();
             _isDrawing = false;
-            _backGroundImage = new Bitmap(400, 400);
+            BackGroundImage = Image.FromFile(testpath);
 
             FilePath = Path.Combine(
                         Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
@@ -125,6 +128,9 @@ namespace SimplePaint.ObjectModel
 
         public void Load(string filePath)
         {
+            _lines = new List<List<Point>>();
+            _isDrawing = false;
+
             BackGroundImage = Image.FromFile(filePath);
             FilePath = filePath;
             IsDirty = false;
@@ -154,7 +160,11 @@ namespace SimplePaint.ObjectModel
         }
 
         public void Save() => Save(FilePath);
-        public void AddEmptyLine() => _lines.Add(new List<Point>());
+        public void AddEmptyLine()
+        {
+            _lines.Add(new List<Point>());
+            IsDirty = true;
+        }
         public void AddLocationToLine(Point location) => _lines.Last().Add(location);
         public void RemoveLastLine() => _lines.RemoveAt(_lines.Count - 1);
         #endregion

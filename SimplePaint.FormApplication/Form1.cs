@@ -22,6 +22,7 @@ namespace SimplePaint.FormApplication
 
             _model.Commands.Add(new NewCommand());
             _model.Commands.Add(new SaveCommand());
+            _model.Commands.Add(new LoadCommand());
             _model.Commands.Add(new QuitCommand());
 
             UpdateFormTitle();
@@ -35,7 +36,7 @@ namespace SimplePaint.FormApplication
         private void UpdateFormTitle()
         {
             Text = string.Format("{0}{1} - Simple Paint Editor",
-                    _doc.FilePath, _doc.IsDirty ? "*" : string.Empty);
+                    _doc.FileName, _doc.IsDirty ? "*" : string.Empty);
         }
     }
 }

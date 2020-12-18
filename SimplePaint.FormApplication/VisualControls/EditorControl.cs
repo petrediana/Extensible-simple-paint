@@ -21,16 +21,21 @@ namespace SimplePaint.FormApplication.VisualControls
             InitializeComponent();
 
             _doc.BackGroundImageChanged += PaintDocument_BackGroundImageChanged;
-            
+
             InitializeCanvasProperties();
 
             KeyDown += EditorControl_KeyDown;
             Resize += EditorControl_Resize;
+
         }
 
         private void PaintDocument_BackGroundImageChanged(object sender, EventArgs e)
         {
             drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
+            drawingCanvasPanel.Refresh();
+            
+            _panelGraphics = drawingCanvasPanel.CreateGraphics();
+            _doc.Draw(_panelGraphics);
         }
 
         private void EditorControl_Resize(object sender, EventArgs e)
@@ -55,10 +60,18 @@ namespace SimplePaint.FormApplication.VisualControls
             drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
 
             #region DrawingCanvasPanel Events needed to draw lines on it
+            drawingCanvasPanel.Paint += DrawingCanvasPanel_Paint;
+
             drawingCanvasPanel.MouseDown += DrawingCanvasPanel_MouseDown;
             drawingCanvasPanel.MouseUp += DrawingCanvasPanel_MouseUp;
             drawingCanvasPanel.MouseMove += DrawingCanvasPanel_MouseMove;
             #endregion
+        }
+
+        private void DrawingCanvasPanel_Paint(object sender, PaintEventArgs e)
+        {
+            _doc.Draw(e.Graphics);
+            Invalidate();
         }
 
         private void DrawingCanvasPanel_MouseMove(object sender, MouseEventArgs e)
