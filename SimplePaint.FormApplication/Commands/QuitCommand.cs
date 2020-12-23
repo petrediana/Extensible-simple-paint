@@ -13,10 +13,10 @@ namespace SimplePaint.FormApplication.Commands
         public override void Execute()
         {
             PaintDocument document = ApplicationModel.Instace.PaintDocument;
-            
+
             if (document.IsDirty)
             {
-                DialogResult dialogResult = 
+                DialogResult dialogResult =
                     MessageBox.Show("Document was modified. Are you sure you want to quit and lose changes?",
                         "Quit - Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 

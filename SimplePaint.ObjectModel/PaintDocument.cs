@@ -21,6 +21,9 @@ namespace SimplePaint.ObjectModel
 
         #region Private Attributes definition
         private List<List<Point>> _lines;
+        private List<Color> _colors;
+        private Color _lastColorUsed;
+
         private bool _isDrawing;
         private Image _backGroundImage;
 
@@ -106,6 +109,10 @@ namespace SimplePaint.ObjectModel
             const string testpath = @"C:\Users\Peanut\Desktop\download.png";
 
             _lines = new List<List<Point>>();
+            _colors = new List<Color>();
+
+            _lastColorUsed = Color.ForestGreen;
+
             _isDrawing = false;
             BackGroundImage = Image.FromFile(testpath);
 
@@ -129,18 +136,34 @@ namespace SimplePaint.ObjectModel
         public void Load(string filePath)
         {
             _lines = new List<List<Point>>();
+            _colors = new List<Color>();
+            _lastColorUsed = Color.ForestGreen;
+
             _isDrawing = false;
 
             BackGroundImage = Image.FromFile(filePath);
             FilePath = filePath;
             IsDirty = false;
         }
+
+        public void DrawLastLine(Graphics graphics)
+        {
+            Pen pen = new Pen(_lastColorUsed, 4);
+            int lastIndex = _lines.Count - 1;
+
+            for (int i = 0; i < _lines[lastIndex].Count - 1; ++i)
+            {
+                graphics.DrawLine(pen, _lines[lastIndex][i], _lines[lastIndex][i + 1]);
+            }
+        }
         public void Draw(Graphics graphics)
         {
-            Pen pen = new Pen(Color.ForestGreen, 4);
-
+            int index = 0;
             foreach (var currentLine in _lines)
             {
+                Pen pen = new Pen(_colors[index], 4);
+                ++index;
+
                 for (int i = 0; i < currentLine.Count - 1; ++i)
                 {
                     graphics.DrawLine(pen, currentLine[i], currentLine[i + 1]);
@@ -163,10 +186,13 @@ namespace SimplePaint.ObjectModel
         public void AddEmptyLine()
         {
             _lines.Add(new List<Point>());
+            _colors.Add(_lastColorUsed);
             IsDirty = true;
         }
         public void AddLocationToLine(Point location) => _lines.Last().Add(location);
         public void RemoveLastLine() => _lines.RemoveAt(_lines.Count - 1);
+
+        public void ChangeColor(Color color) => _lastColorUsed = color;
         #endregion
 
         #region Factory call an event - OnPropertyChanged

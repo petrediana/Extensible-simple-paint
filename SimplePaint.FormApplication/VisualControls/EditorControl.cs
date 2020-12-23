@@ -79,7 +79,7 @@ namespace SimplePaint.FormApplication.VisualControls
             if (_doc.IsDrawing)
             {
                 _doc.AddLocationToLine(e.Location);
-                _doc.Draw(_panelGraphics);
+                _doc.DrawLastLine(_panelGraphics);
                 Invalidate();
             }
         }
