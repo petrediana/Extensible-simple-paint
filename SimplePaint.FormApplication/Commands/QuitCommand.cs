@@ -9,7 +9,7 @@ namespace SimplePaint.FormApplication.Commands
 {
     public class QuitCommand : Command
     {
-        public QuitCommand() : base("Quit") { }
+        public QuitCommand() : base("Quit", Resource1.QuitImage) { }
         public override void Execute()
         {
             PaintDocument document = ApplicationModel.Instace.PaintDocument;

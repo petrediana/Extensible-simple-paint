@@ -9,7 +9,7 @@ namespace SimplePaint.FormApplication.Commands
 {
     public class SaveCommand : Command
     {
-        public SaveCommand() : base("Save") { }
+        public SaveCommand() : base("Save", Resource1.SaveImage) { }
         public override void Execute()
         {
             PaintDocument document = ApplicationModel.Instace.PaintDocument;

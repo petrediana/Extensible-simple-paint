@@ -9,7 +9,7 @@ namespace SimplePaint.FormApplication.Commands
 {
     public class LoadCommand : Command
     {
-        public LoadCommand() : base("Load") { }
+        public LoadCommand() : base("Load", Resource1.LoadImage) { }
 
         public override void Execute()
         {

@@ -9,7 +9,7 @@ namespace SimplePaint.FormApplication.Commands
 {
     public class NewCommand : Command
     {
-        public NewCommand() : base("New") { }
+        public NewCommand() : base("New", Resource1.NewImage) { }
 
         public override void Execute()
         {

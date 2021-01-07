@@ -12,3 +12,4 @@ C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplica
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.pdb
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.VisualControls.EditorControl.resources
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.VisualControls.CommandsControl.resources
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.FormApplication\obj\Debug\SimplePaint.FormApplication.Resource1.resources

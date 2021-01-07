@@ -9,7 +9,7 @@ namespace SimplePaint.FormApplication.Commands
 {
     public class ChangeColorCommand : Command
     {
-        public ChangeColorCommand() : base("Pick Color") { }
+        public ChangeColorCommand() : base("Pick Color", Resource1.TestImage) { }
 
         public override void Execute()
         {
