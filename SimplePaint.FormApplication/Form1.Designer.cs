@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.editorControl1 = new SimplePaint.FormApplication.VisualControls.EditorControl();
             this.commandsControl1 = new SimplePaint.FormApplication.VisualControls.CommandsControl();
             this.SuspendLayout();
@@ -55,6 +56,7 @@
             this.ClientSize = new System.Drawing.Size(583, 360);
             this.Controls.Add(this.commandsControl1);
             this.Controls.Add(this.editorControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
