@@ -53,7 +53,7 @@ namespace SimplePaint.FormApplication.VisualControls
 
         private void InitializeCanvasProperties()
         {
-            
+            drawingCanvasPanel.Cursor = Cursors.Cross;
             _panelGraphics = drawingCanvasPanel.CreateGraphics();
             _panelGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
