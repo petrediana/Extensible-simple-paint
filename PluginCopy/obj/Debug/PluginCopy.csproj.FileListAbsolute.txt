@@ -1,0 +1,9 @@
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\bin\Debug\PluginCopy.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\bin\Debug\PluginCopy.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\bin\Debug\SimplePaint.ObjectModel.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\bin\Debug\SimplePaint.ObjectModel.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.csprojAssemblyReference.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.csproj.CoreCompileInputs.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.csproj.CopyComplete
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.pdb

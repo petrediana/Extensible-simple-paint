@@ -31,6 +31,8 @@ namespace SimplePaint.FormApplication
             _doc.FilePathChanged += (s, e) => UpdateFormTitle();
             _doc.IsDirtyChanged += (s, e) => UpdateFormTitle();
 
+            _model.LoadAvailablePlugins();
+
             _model.OnQuit += (s, e) => Close();
         }
 

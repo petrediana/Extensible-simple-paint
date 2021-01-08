@@ -45,6 +45,7 @@
     <Compile Include="ApplicationModel.cs" />
     <Compile Include="Command.cs" />
     <Compile Include="CommandCollection.cs" />
+    <Compile Include="IPluginable.cs" />
     <Compile Include="ObservableCollectionBase.cs" />
     <Compile Include="PaintDocument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

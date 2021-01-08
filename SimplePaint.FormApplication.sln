@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePaint.FormApplication
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplePaint.ObjectModel", "SimplePaint.ObjectModel\SimplePaint.ObjectModel.csproj", "{EC9793CD-D223-4C15-B768-175C6C4CAD2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluginCopy", "PluginCopy\PluginCopy.csproj", "{CE4E7971-1212-4AB9-9CAA-D2E9E90C91FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EC9793CD-D223-4C15-B768-175C6C4CAD2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC9793CD-D223-4C15-B768-175C6C4CAD2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC9793CD-D223-4C15-B768-175C6C4CAD2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE4E7971-1212-4AB9-9CAA-D2E9E90C91FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE4E7971-1212-4AB9-9CAA-D2E9E90C91FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE4E7971-1212-4AB9-9CAA-D2E9E90C91FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE4E7971-1212-4AB9-9CAA-D2E9E90C91FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
