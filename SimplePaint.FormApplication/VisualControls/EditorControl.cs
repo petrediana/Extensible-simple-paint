@@ -15,7 +15,6 @@ namespace SimplePaint.FormApplication.VisualControls
         private PaintDocument _doc = ApplicationModel.Instace.PaintDocument;
         private Graphics _panelGraphics;
 
-        const string testImgPath = @"C:\Users\Peanut\Desktop\c25ca8a50647885986e62037962fb6d6.jpg";
         public EditorControl()
         {
             InitializeComponent();
