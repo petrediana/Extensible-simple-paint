@@ -29,17 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.editorControl1 = new SimplePaint.FormApplication.VisualControls.EditorControl();
             this.commandsControl1 = new SimplePaint.FormApplication.VisualControls.CommandsControl();
+            this.editorControl1 = new SimplePaint.FormApplication.VisualControls.EditorControl();
             this.SuspendLayout();
-            // 
-            // editorControl1
-            // 
-            this.editorControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.editorControl1.Location = new System.Drawing.Point(0, 0);
-            this.editorControl1.Name = "editorControl1";
-            this.editorControl1.Size = new System.Drawing.Size(583, 360);
-            this.editorControl1.TabIndex = 1;
             // 
             // commandsControl1
             // 
@@ -49,11 +41,19 @@
             this.commandsControl1.Size = new System.Drawing.Size(583, 43);
             this.commandsControl1.TabIndex = 2;
             // 
+            // editorControl1
+            // 
+            this.editorControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.editorControl1.Location = new System.Drawing.Point(0, 49);
+            this.editorControl1.Name = "editorControl1";
+            this.editorControl1.Size = new System.Drawing.Size(583, 309);
+            this.editorControl1.TabIndex = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 360);
+            this.ClientSize = new System.Drawing.Size(583, 358);
             this.Controls.Add(this.commandsControl1);
             this.Controls.Add(this.editorControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
