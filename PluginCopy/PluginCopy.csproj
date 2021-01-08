@@ -44,14 +44,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CopyCommand.cs" />
+    <Compile Include="CopyLinesCommand.cs" />
     <Compile Include="CopyPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceImages.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SimplePaint.ObjectModel\SimplePaint.ObjectModel.csproj">
       <Project>{ec9793cd-d223-4c15-b768-175c6c4cad2c}</Project>
       <Name>SimplePaint.ObjectModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ResourceImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyAllImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CopyDrawnLinesImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

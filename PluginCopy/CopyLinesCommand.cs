@@ -6,13 +6,13 @@ using SimplePaint.ObjectModel;
 
 namespace PluginCopy
 {
-    public class CopyCommand : Command
+    public class CopyLinesCommand : Command
     {
-        public CopyCommand() : base("Copy All", ResourceImages.CopyAllImage) { }
+        public CopyLinesCommand() : base("Copy Lines", ResourceImages.CopyDrawnLinesImage) { }
         public override void Execute()
         {
             PaintDocument document = ApplicationModel.Instace.PaintDocument;
-            document.CopyToClipboard();
+            document.CopyDrawnLinesToClipboard();
         }
     }
 }

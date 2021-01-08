@@ -12,7 +12,8 @@ namespace PluginCopy
         {
             List<Command> commands = new List<Command>
             {
-                new CopyCommand()
+                new CopyCommand(),
+                new CopyLinesCommand()
             };
 
             return commands;

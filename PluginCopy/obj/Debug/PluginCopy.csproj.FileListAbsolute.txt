@@ -7,3 +7,5 @@ C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\Pl
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.csproj.CopyComplete
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.dll
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.ResourceImages.resources
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginCopy\obj\Debug\PluginCopy.csproj.GenerateResource.cache

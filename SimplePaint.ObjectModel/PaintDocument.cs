@@ -182,6 +182,17 @@ namespace SimplePaint.ObjectModel
             Clipboard.SetDataObject(dataObject);
         }
 
+        public void CopyDrawnLinesToClipboard()
+        {
+            DataObject dataObject = new DataObject();
+            Bitmap drawnLines = new Bitmap(BackGroundImage.Width, BackGroundImage.Height);
+
+            Draw(Graphics.FromImage(drawnLines));
+
+            dataObject.SetData(typeof(Bitmap), drawnLines);
+            Clipboard.SetDataObject(dataObject);
+        }
+
         public void Save() => Save(FilePath);
         public void AddEmptyLine()
         {
