@@ -23,6 +23,7 @@ namespace SimplePaint.ObjectModel
         private List<List<Point>> _lines;
         private List<Color> _colors;
         private Color _lastColorUsed;
+        private Point _currentLocation;
 
         private bool _isDrawing;
         private Image _backGroundImage;
@@ -36,9 +37,23 @@ namespace SimplePaint.ObjectModel
         public event EventHandler BackGroundImageChanged;
         public event EventHandler IsDirtyChanged;
         public event EventHandler FilePathChanged;
+        public event EventHandler CurrentLocationChanged;
         #endregion
 
-        #region Public Properties Definitions: Lines, IsDrawing, BackGroundImage, FilePath, IsDirty
+        #region Public Properties Definitions: CurrentLocation, Lines, IsDrawing, BackGroundImage, FilePath, IsDirty
+        public Point CurrentLocation
+        {
+            get => _currentLocation;
+            set
+            {
+                if (_currentLocation != value)
+                {
+                    _currentLocation = value;
+                    OnPropertyChanged("CurrentLocation");
+                }
+            }
+        }
+
         public List<List<Point>> Lines
         {
             get => _lines;

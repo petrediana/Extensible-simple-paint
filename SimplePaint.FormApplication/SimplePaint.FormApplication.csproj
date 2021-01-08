@@ -77,6 +77,12 @@
     <Compile Include="VisualControls\EditorControl.Designer.cs">
       <DependentUpon>EditorControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="VisualControls\InfoStatusControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VisualControls\InfoStatusControl.Designer.cs">
+      <DependentUpon>InfoStatusControl.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VisualControls\EditorControl.resx">
       <DependentUpon>EditorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VisualControls\InfoStatusControl.resx">
+      <DependentUpon>InfoStatusControl.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

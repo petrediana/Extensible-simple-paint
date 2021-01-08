@@ -80,6 +80,7 @@ namespace SimplePaint.FormApplication.VisualControls
             {
                 _doc.AddLocationToLine(e.Location);
                 _doc.DrawLastLine(_panelGraphics);
+                _doc.CurrentLocation = e.Location;
                 Invalidate();
             }
         }
