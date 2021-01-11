@@ -3,3 +3,4 @@ C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.ObjectModel
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.ObjectModel\obj\Debug\SimplePaint.ObjectModel.csproj.CoreCompileInputs.cache
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.ObjectModel\obj\Debug\SimplePaint.ObjectModel.dll
 C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.ObjectModel\obj\Debug\SimplePaint.ObjectModel.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\SimplePaint.ObjectModel\obj\Debug\SimplePaint.ObjectModel.csprojAssemblyReference.cache

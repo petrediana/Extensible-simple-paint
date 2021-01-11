@@ -130,6 +130,7 @@ namespace SimplePaint.ObjectModel
 
             _isDrawing = false;
             BackGroundImage = Image.FromFile(testpath);
+            CurrentLocation = new Point();
 
             FilePath = Path.Combine(
                         Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments),
@@ -157,6 +158,7 @@ namespace SimplePaint.ObjectModel
             _isDrawing = false;
 
             BackGroundImage = Image.FromFile(filePath);
+            CurrentLocation = new Point();
             FilePath = filePath;
             IsDirty = false;
         }
