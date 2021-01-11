@@ -90,8 +90,17 @@ namespace SimplePaint.FormApplication.VisualControls
 
         private void DrawingCanvasPanel_MouseDown(object sender, MouseEventArgs e)
         {
-            _doc.IsDrawing = true;
-            _doc.AddEmptyLine();
+            if (_doc.IsDrawingElipse)
+            {
+                _doc.DrawElipseInBackground(e.Location, _panelGraphics);
+                _doc.IsDrawingElipse = false;
+            }
+            else
+            {
+                _doc.IsDrawing = true;
+                _doc.AddEmptyLine();
+            }
+
         }
     }
 }

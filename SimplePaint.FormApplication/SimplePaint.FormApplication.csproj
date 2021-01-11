@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\ChangeColorCommand.cs" />
+    <Compile Include="Commands\DrawElipseCommand.cs" />
     <Compile Include="Commands\LoadCommand.cs" />
     <Compile Include="Commands\NewCommand.cs" />
     <Compile Include="Commands\QuitCommand.cs" />
@@ -147,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\MainAppImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElipseImage.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

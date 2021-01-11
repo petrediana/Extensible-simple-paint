@@ -185,6 +185,17 @@ namespace SimplePaint.ObjectModel
             }
         }
 
+        public bool IsDrawingElipse { get; set; }
+        public void DrawElipseInBackground(Point location, Graphics graphics)
+        {
+            var newImage = new Bitmap(BackGroundImage);
+            DrawElipse(location, Graphics.FromImage(newImage));
+
+            BackGroundImage = newImage;
+        }
+        private void DrawElipse(Point location, Graphics graphics) 
+            => graphics.DrawEllipse(new Pen(Color.Black, 3), location.X, location.Y, 100, 70);
+
         public void CopyToClipboard()
         {
             DataObject dataObject = new DataObject();

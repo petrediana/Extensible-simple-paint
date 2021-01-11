@@ -63,6 +63,16 @@ namespace SimplePaint.FormApplication {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ElipseImage {
+            get {
+                object obj = ResourceManager.GetObject("ElipseImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LoadImage {
             get {
                 object obj = ResourceManager.GetObject("LoadImage", resourceCulture);

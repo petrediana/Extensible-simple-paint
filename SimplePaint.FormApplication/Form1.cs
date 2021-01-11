@@ -24,6 +24,7 @@ namespace SimplePaint.FormApplication
             _model.Commands.Add(new SaveCommand());
             _model.Commands.Add(new LoadCommand());
             _model.Commands.Add(new ChangeColorCommand());
+            _model.Commands.Add(new DrawElipseCommand());
             _model.Commands.Add(new QuitCommand());
 
             UpdateFormTitle();
