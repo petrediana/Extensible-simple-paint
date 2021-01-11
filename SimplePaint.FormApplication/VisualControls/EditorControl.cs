@@ -54,7 +54,6 @@ namespace SimplePaint.FormApplication.VisualControls
         {
             drawingCanvasPanel.Cursor = Cursors.Cross;
             _panelGraphics = drawingCanvasPanel.CreateGraphics();
-            _panelGraphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
             drawingCanvasPanel.BackgroundImage = _doc.BackGroundImage;
 
