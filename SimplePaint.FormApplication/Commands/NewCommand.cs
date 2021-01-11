@@ -17,7 +17,7 @@ namespace SimplePaint.FormApplication.Commands
             if (document.IsDirty)
             {
                 DialogResult dialogResult =
-                    MessageBox.Show("Document was modified. You will lose changes. Want to save?",
+                    MessageBox.Show("Document was modified. You will lose changes. Are you sure you want a new paint document?",
                         "Paint!", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (dialogResult == DialogResult.No)
