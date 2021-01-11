@@ -1,0 +1,11 @@
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\bin\Debug\PluginFlip.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\bin\Debug\PluginFlip.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\bin\Debug\SimplePaint.ObjectModel.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\bin\Debug\SimplePaint.ObjectModel.pdb
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.csprojAssemblyReference.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.Resource1.resources
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.csproj.GenerateResource.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.csproj.CoreCompileInputs.cache
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.csproj.CopyComplete
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.dll
+C:\Users\Peanut\source\repos\SimplePaint.FormApplication\PluginFlip\obj\Debug\PluginFlip.pdb

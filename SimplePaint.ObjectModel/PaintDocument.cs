@@ -221,6 +221,20 @@ namespace SimplePaint.ObjectModel
         public void RemoveLastLine() => _lines.RemoveAt(_lines.Count - 1);
 
         public void ChangeColor(Color color) => _lastColorUsed = color;
+
+        public void RotateImageRight() => FlipImage(RotateFlipType.Rotate90FlipNone);
+
+        public void RotateImage180() => FlipImage(RotateFlipType.Rotate180FlipNone);
+
+        private void FlipImage(RotateFlipType rotateFlipType)
+        {
+            var newImage = BackGroundImage;
+            newImage.RotateFlip(rotateFlipType);
+
+            const string testpath = @"C:\Users\Peanut\Desktop\download.png";
+            BackGroundImage = Image.FromFile(testpath);
+            BackGroundImage = newImage;
+        }
         #endregion
 
         #region Factory call an event - OnPropertyChanged

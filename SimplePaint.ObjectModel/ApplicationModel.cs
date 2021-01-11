@@ -68,6 +68,7 @@ namespace SimplePaint.ObjectModel
                     {
                         if (type.GetInterface(INTERFACE_NAME) != null)
                         {
+                            Console.WriteLine(type);
                             IPluginable plugin = Activator.CreateInstance(type) as IPluginable;
                             plugin.Initialize();
 
