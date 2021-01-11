@@ -120,16 +120,13 @@ namespace SimplePaint.ObjectModel
         #region Implementing some basic features
         public void New()
         {
-            // TODO: load from resource
-            const string testpath = @"C:\Users\Peanut\Desktop\download.png";
-
             _lines = new List<List<Point>>();
             _colors = new List<Color>();
 
             _lastColorUsed = Color.ForestGreen;
 
             _isDrawing = false;
-            BackGroundImage = Image.FromFile(testpath);
+            BackGroundImage = Resource1.DefaultWhiteImage;
             CurrentLocation = new Point();
 
             FilePath = Path.Combine(
@@ -231,8 +228,7 @@ namespace SimplePaint.ObjectModel
             var newImage = BackGroundImage;
             newImage.RotateFlip(rotateFlipType);
 
-            const string testpath = @"C:\Users\Peanut\Desktop\download.png";
-            BackGroundImage = Image.FromFile(testpath);
+            BackGroundImage = Resource1.DefaultWhiteImage;
             BackGroundImage = newImage;
         }
         #endregion
