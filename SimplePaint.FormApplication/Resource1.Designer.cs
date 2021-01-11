@@ -103,6 +103,16 @@ namespace SimplePaint.FormApplication {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RubberImage {
+            get {
+                object obj = ResourceManager.GetObject("RubberImage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap SaveImage {
             get {
                 object obj = ResourceManager.GetObject("SaveImage", resourceCulture);
